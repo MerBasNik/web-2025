@@ -1,0 +1,17 @@
+.info__main {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.info__img{
+    display: flex;
+    align-items: center;
+}
+.img__img_photo {
+    max-width: 200px;
+    border-radius: 20px;
+}
