@@ -1,0 +1,46 @@
+.lenta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.lenta__item {
+    max-width: 474px;
+}
+.lenta__item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lenta__item-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lenta__item-ava {
+    width: 32px;
+    border-radius: 6px;
+}
+.lenta__item-name {
+    font-weight: 500;
+    font-size: 14px;
+}
+.lenta__item-text {
+    line-height: 18px;
+    font-size: 15px;
+    word-wrap: break-word;
+}
+.photo {
+    width: 474px;
+}
+.photo__reaction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(34, 34, 34, 0.05);
+    border-radius: 8px;
+    max-width: 68px;
+    padding: 6px 12px;
+    box-sizing: border-box;
+}

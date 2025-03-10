@@ -3,19 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/lw4/styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">   
     <title>Logination</title>
 </head>
 <body>
     <div>
-        <h1>Войти</h1>
-        <img src="/lw4/images/mainphoto.png" alt="login" width="150">
+        <div>
+            <h1>Войти</h1>
+            <img src="/lw4/images/mainphoto.png" alt="logo">
+        </div>
+
         <form>
             <label for="email">Электропочта</label>
-            <input type="email" name="email" id="email" placeholder="Введите электропочту в формате ****@******" required>
+            <input type="email" name="email" id="email" required>
+            <label for="email">Введите электропочту в формате ****@******</label>
             <label for="password">Пароль</label>
             <input type="password" name="password" id="password" required>
             <button type="submit">Продолжить</button>
-        </form>
+        </form> 
     </div>
 </body>
 </html>
