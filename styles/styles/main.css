@@ -39,22 +39,27 @@ p {
 
 .menu {
     padding: 48px 24px 0;
+    max-width: 72px;
     display: flex;
     justify-content: center;
     border-right: 1px rgba(34, 34, 34, 0.05) solid;
     position: fixed;
-    height: 100%;
+    flex-direction: column;
 }
 .menu__list {
     list-style-type: none;
 }
-.menu__list_item {
+.menu__list--item {
+    transition: transform 0.3s ease;
     margin-bottom: 35px;
 }
+.menu__list--item:hover {
+    transform: scale(1.2);
+}
 
-.menu__list_img {
+.menu__list--img {
     width: 24px;
 }
-.menu__list_link {
+.menu__list--link {
     margin-bottom: 16px;
 }

@@ -8,24 +8,22 @@
     position: absolute;
     top: -100px; 
     left: 170px; 
+    
     font-weight: 700;
     font-style: normal;
     font-size: 140px;
 }
-
 .loginpage__inner {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.loginpage__inner_img {
+.loginpage__inner--img {
     width: 462px;
     height: 501px;
     margin-right: 50px;
 }
-
-.loginpage__inner_form {
+.loginpage__inner--form {
     display: flex;
     flex-direction: column;
     max-width: 343px;
@@ -41,12 +39,10 @@
     flex-direction: column;
     margin-bottom: 32px;
 }
-
-.form__label {
+.form__label{
     font-size: 15px;
 }
-
-.form__label_lite {
+.label--lite {
     color: #808080;
     font-size: 13px;
 }

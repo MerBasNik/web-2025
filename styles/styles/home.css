@@ -5,34 +5,31 @@
     align-items: center;
     width: 100%;
 }
-
 .lenta__item {
     max-width: 474px;
     padding-bottom: 20px;
 }
-
-.lenta__item_header {
+.lenta__item--header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 16px 0;
 }
-
-.lenta__item_info {
+.lenta__item--info {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
-.lenta__item_ava {
+.lenta__item--ava {
     width: 32px;
     border-radius: 6px;
 }
-.lenta__item_name {
+.lenta__item--name {
     font-weight: 500;
     font-size: 14px;
 }
-.lenta__item_text {
+.lenta__item--text {
     line-height: 18px;
     font-size: 15px;
     word-wrap: break-word;
