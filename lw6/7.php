@@ -1,7 +1,6 @@
 <?php
     $expression = $_POST["expression"];
     $result = evaluateExpression($expression);
-
     echo "<h2>Результат:</h2>";
     echo "<p>$result</p>";
     function evaluateExpression($expression) {
@@ -14,7 +13,7 @@
                 $operand2 = array_pop($stack);
                 $operand1 = array_pop($stack);
 
-                $result = match (token) {
+                $result = match ($token) {
                     '+' => $operand1 + $operand2,
                     '-' => $operand1 - $operand2,
                     '*' => $operand1 * $operand2,

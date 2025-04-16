@@ -1,12 +1,12 @@
 <?php
     $date = $_POST["date"];
-    $date_parts = explode(".", $date);
-    $day = intval($date_parts[0]);
-    $month = intval($date_parts[1]);
-    $year = intval($date_parts[2]);
+    $dateParts = explode(".", $date);
+    $day = intval($dateParts[0]);
+    $month = intval($dateParts[1]);
+    $year = intval($dateParts[2]);
     if (checkdate($month, $day, $year)) {
-        $zodiac_sign = getZodiacSign($day, $month);
-        echo "<p>Дата рождения: " . $date . "<br>Знак зодиака: <strong>" . $zodiac_sign . "</strong></p>";
+        $zodiacSign = getZodiacSign($day, $month);
+        echo "<p>Дата рождения: " . $date . "<br>Знак зодиака: <strong>" . $zodiacSign . "</strong></p>";
     } else {
         echo "<p style='color: red;'>Ошибка: Введите корректную дату в формате ДД.ММ.ГГГГ.</p>";
     }
@@ -25,9 +25,9 @@
             11 => array("Скорпион", "Стрелец"),
             12 => array("Стрелец", "Козерог")
         );
-        $day_in_month = array(20, 19, 20, 20, 21, 21, 23, 23, 23, 23, 22, 22); 
+        $dayInMonth = array(20, 19, 20, 20, 21, 21, 23, 23, 23, 23, 22, 22); 
         $monthIndex = $month - 1;
-        $signIndex = ($day <= $day_in_month[$monthIndex]) ? 0 : 1;
+        $signIndex = ($day <= $dayInMonth[$monthIndex]) ? 0 : 1;
         return $zodiacSigns[$month][$signIndex];
     }
 ?>
