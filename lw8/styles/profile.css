@@ -15,23 +15,23 @@
     margin-bottom: 42px;
 }
 
-.profilecontainer__about_ava {
+.profile-about__ava {
     width: 123px;
     border-radius: 16px;
     margin-bottom: 20px;
 }
 
-.profilecontainer__about_info {
+.profile-about__info {
     text-align: center;
 }
 
-.info__name {
+.profile-info__name {
     font-weight: 500;
     font-size: 32px;
     margin-bottom: 10px;
 }
 
-.info__main {
+.profile-info__main {
     font-size: 15px;
     width: 361px;
     text-align: center;
@@ -39,7 +39,7 @@
     line-height: 18px;
 }
 
-.profilecontainer__about_posts {
+.profile-about__post {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -51,11 +51,11 @@
     padding: 6px 10px;
 }
 
-.aboutpost__img {
+.about-post__img {
     width: 16px;
 }
 
-.aboutpost__count {
+.about-post__count {
     font-size: 15px;
 }
 
@@ -68,17 +68,26 @@
     max-width: 972px;
 }
 
-.profilecontainer__posts_item {
+.profile-posts__item {
+    flex: 1 1 calc(33.333% - 20px);
     aspect-ratio: 1/1;
     position: relative;
-    overflow: hidden;
+    max-width: 322px;
+    max-height: 322px;
+    transition: transform 0.3s ease;
 }
 
-.profilecontainer__posts_img {
-    /* max-width: 322px;
-    max-height: 432px; */
+.profile-post__img {
+    max-width: 322px;
+    max-height: 322px;
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
+}
+
+.profile-posts__item:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
 }

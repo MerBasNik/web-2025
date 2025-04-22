@@ -45,18 +45,25 @@ p {
     position: fixed;
     height: 100%;
 }
+
 .menu__list {
     list-style-type: none;
 }
 
-.menu__list_item {
+.menu__item {
+    transition: transform 0.3s ease;
     margin-bottom: 35px;
 }
 
-.menu__list_img {
+.menu__item:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.menu-item__img {
     width: 24px;
 }
 
-.menu__list_link {
+.menu-item__link {
     margin-bottom: 16px;
 }

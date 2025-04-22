@@ -19,23 +19,25 @@
     align-items: center;
 }
 
-.loginpage__inner_img {
+.loginpage__img {
     width: 462px;
     height: 501px;
     margin-right: 50px;
 }
 
-.loginpage__inner_form {
+.loginpage__form {
     display: flex;
     flex-direction: column;
     max-width: 343px;
     margin-left: 50px;
 }
+
 .form__mail {
     display: flex;
     flex-direction: column;
     margin-bottom: 16px; 
 }
+
 .form__pass {
     display: flex;
     flex-direction: column;
@@ -46,7 +48,7 @@
     font-size: 15px;
 }
 
-.form__label_lite {
+.form__label_pass {
     color: #808080;
     font-size: 13px;
 }

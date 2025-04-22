@@ -46,19 +46,19 @@
     <div class="container">
         <nav class="menu">
             <ul class="menu__list">
-                <li class="menu__list_item">
-                    <a href="" class="menu__list_link">
-                        <img src="images/icons/home.png" alt="home">
+                <li class="menu__item menu-item">
+                    <a href="" class="menu-item__link">
+                        <img class="menu-item__img" src="images/icons/home.png" alt="home">
                     </a>
                 </li>
-                <li class="menu__list_item">
-                    <a href="" class="menu__list_link">
-                        <img src="images/icons/user.png" alt="user">
+                <li class="menu__item menu-item">
+                    <a href="" class="menu-item__link">
+                        <img class="menu-item__img" src="images/icons/user.png" alt="user">
                     </a>
                 </li>
-                <li class="menu__list_item">
-                    <a href="" class="menu__list_link">
-                        <img src="images/icons/plus.png" alt="plus">
+                <li class="menu__item menu-item">
+                    <a href="" class="menu-item__link">
+                        <img class="menu-item__img" src="images/icons/plus.png" alt="plus">
                     </a>
                 </li>
             </ul>
