@@ -14,7 +14,7 @@
 
     $imagePath = "null";
     if (!empty($_FILES['image'])) {
-        $uploadDir = 'images/';
+        $uploadDir = 'images/img_post/';
         if (!is_dir($uploadDir)) {
             mkdir($uploadDir, 0755, true);
         }

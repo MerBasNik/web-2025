@@ -47,12 +47,12 @@
         <nav class="menu">
             <ul class="menu__list">
                 <li class="menu__item menu-item">
-                    <a href="" class="menu-item__link">
+                    <a href="/home" class="menu-item__link">
                         <img class="menu-item__img" src="images/icons/home.png" alt="home">
                     </a>
                 </li>
                 <li class="menu__item menu-item">
-                    <a href="" class="menu-item__link">
+                    <a href="/profile" class="menu-item__link">
                         <img class="menu-item__img" src="images/icons/user.png" alt="user">
                     </a>
                 </li>

@@ -8,10 +8,10 @@
     }
 
     function savePostToDatabase(PDO $connection, array $postParams): int {
-        $userId = $connection->quote($postParams['user_id']);
-        $text = $connection->quote($postParams['text']);
-        $image = $connection->quote($postParams['image']);
-        $likes = $connection->quote($postParams['likes']);
+        $userId = (int)$postParams['user_id'];
+        $text = $postParams['text'];
+        $image = $postParams['image'];
+        $likes = (int)$postParams['likes'];
         
         $query = <<<SQL
             INSERT INTO post (user_id, text, image, time, likes)
