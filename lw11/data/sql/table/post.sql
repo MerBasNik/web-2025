@@ -1,0 +1,8 @@
+CREATE TABLE post (
+    post_id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    text TEXT NOT NULL,
+    time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    likes INT DEFAULT 0,
+    FOREIGN KEY (user_id) REFERENCES user(user_id) ON DELETE CASCADE
+);

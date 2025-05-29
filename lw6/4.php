@@ -4,9 +4,11 @@
     if ($parsedDate) {
         $day = $parsedDate['day'];
         $month = $parsedDate['month'];
+        $year = $parsedDate['year'];
+        $date = $day . '.' . $month . '.' . $year;
         if (validateDate($day, $month)) {
             $zodiacSign = getZodiacSign($day, $month);
-            echo "<p>Дата рождения: " . $dateString . "<br>Знак зодиака: <strong>" . $zodiacSign . "</strong></p>";
+            echo "<p>Дата рождения: " . $date . "<br>Знак зодиака: <strong>" . $zodiacSign . "</strong></p>";
         } else {
             echo "<p style='color: red;'>Ошибка: Введите корректную дату.</p>";
         }
@@ -19,7 +21,8 @@
         if (count($dateParts) >= 3) {
             return array(
                 'day' => intval($dateParts[0]),
-                'month' => intval($dateParts[1])
+                'month' => intval($dateParts[1]),
+                'year' => intval($dateParts[2] . $dateParts[3]),
             );
         } else {
             return false;

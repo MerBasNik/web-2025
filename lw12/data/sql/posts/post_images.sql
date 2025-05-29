@@ -1,0 +1,21 @@
+INSERT INTO post_images (image_id, post_id, image_url) 
+VALUES
+(1, 1, 'images/img_post/town.png'),
+(2, 1, 'images/img_post/city.png'),
+(3, 1, 'images/img_post/book.png'),
+(4, 2, 'images/img_post/cake.png'),
+(5, 2, 'images/img_post/pocket.png'),
+(6, 2, 'images/img_post/people.png'),
+(7, 3, 'images/img_post/town.png'),
+(8, 3, 'images/img_post/fish.png'),
+(9, 4, 'images/img_post/town.png'),
+(10, 4, 'images/img_post/city.png'),
+(11, 5, 'images/img_post/book.png'),
+(12, 5, 'images/img_post/cake.png'),
+(13, 6, 'images/img_post/pocket.png'),
+(14, 7, 'images/img_post/people.png'),
+(15, 7, 'images/img_post/cske.png'),
+(16, 7, 'images/img_post/city.png'),
+(17, 7, 'images/img_post/fish.png'),
+(18, 8, 'images/img_post/town.png'),
+(19, 8, 'images/img_post/city.png');
